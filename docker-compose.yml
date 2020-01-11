@@ -2,15 +2,8 @@ version: "3.3"
 services: 
     web:
         build: .
-        depends_on: 
-            - composer
         working_dir: /var/www/laravel/
         volumes: 
-            - ./app:/var/www/laravel/
+            - ./app/laravel:/var/www/laravel/
         ports: 
             - 8080:80
-    composer:
-        image: composer/composer
-        volumes: 
-            - ./app:/app
-        command: create-project --prefer-dist laravel/laravel laravel "5.5.28"
