@@ -88,9 +88,9 @@ Add the next line in hosts file
 ```
 
 ### Open app
-Server is running on http://laravel.local:8080
+**Server** is running on http://laravel.local:8080
 
-PHPMyAdmin is running on  http://laravel.local:8081
+**PHPMyAdmin** is running on  http://laravel.local:8081
 
 ### How to execute artisan?
 ```
